@@ -1,5 +1,5 @@
-import type { UserRole } from "../types/auth.types";
-
+// import type { UserRole } from "../types/auth.types";
+import type { Role } from "@/config/roles";
 export interface AuthUser {
   id: number;
 
@@ -11,5 +11,5 @@ export interface AuthUser {
 
   image: string;
 
-  role: UserRole;
+  role: Role;
 }
