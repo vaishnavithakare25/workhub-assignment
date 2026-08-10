@@ -10,6 +10,8 @@ export interface ConfirmDialogProps {
 
   confirmLoading?: boolean;
 
+  isLoading?: boolean;
+
   onConfirm: () => void;
   onCancel: () => void;
 
