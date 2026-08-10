@@ -20,4 +20,10 @@ export const authService = {
       user: toAuthUser(userResponse),
     };
   },
+
+  async getCurrentUser() {
+    const { data } = await authApi.getCurrentUser();
+
+    return toAuthUser(data);
+  },
 };

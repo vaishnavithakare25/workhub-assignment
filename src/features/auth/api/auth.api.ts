@@ -18,4 +18,9 @@ export const authApi = {
       ENDPOINTS.USERS.DETAIL(id)
     );
   },
+  getCurrentUser() {
+    return apiClient.get<UserResponseDto>(
+      ENDPOINTS.AUTH.ME
+    );
+  },
 };
