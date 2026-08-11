@@ -46,7 +46,7 @@ export const protectedRoutes: AppRoute[] = [
   },
 
   {
-    path: "users/new",
+    path: "users/create",
     component: CreateUserPage,
     permissions: [PERMISSIONS.USERS.CREATE],
   },

@@ -16,11 +16,11 @@ import { useUpdateUser } from "../hooks/useUpdateUser";
 import type { UserFormValues } from "../schemas/user-form.schema";
 
 export default function EditUserPage() {
-  const { id } = useParams();
+  const { userId: userIdParam } = useParams();
+  const userId = Number(userIdParam);
 
   const navigate = useNavigate();
 
-  const userId = Number(id);
 
   const {
     data: user,
@@ -59,7 +59,7 @@ export default function EditUserPage() {
   const handleBack = () => {
     navigate(
       ROUTES.USER_DETAIL.replace(
-        ":id",
+        ":userId",
         String(userId)
       )
     );
