@@ -38,8 +38,8 @@ export const userFormSchema = z.object({
       message: "Age is required",
     })
     .int("Age must be a whole number")
-    .min(18, "Age must be at least 1")
-    .max(75, "Age must be less than or equal to 120"),
+    .min(18, "Age must be at least 18")
+    .max(75, "Age must be less than or equal to 75"),
 
   role: z.enum(USER_ROLES, {
     message: "Role is required",
