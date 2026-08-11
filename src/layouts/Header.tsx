@@ -1,6 +1,6 @@
 import { Button, StatusBadge } from "@/shared/components";
 
-import { useLogout } from "@/features/auth/hooks/useLogout";
+import { useLogout } from "@/features/auth/hooks";
 import { useAuthStore } from "@/stores/auth.store";
 
 const ROLE_LABELS = {

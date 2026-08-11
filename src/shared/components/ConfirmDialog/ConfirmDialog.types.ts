@@ -10,10 +10,9 @@ export interface ConfirmDialogProps {
 
   confirmLoading?: boolean;
 
-  isLoading?: boolean;
-
   onConfirm: () => void;
   onCancel: () => void;
+  isLoading?: boolean;
 
   icon?: ReactNode;
 }

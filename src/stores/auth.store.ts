@@ -8,6 +8,7 @@ interface LoginPayload {
   user: AuthUser;
 }
 
+
 interface AuthState {
   accessToken: string | null;
   user: AuthUser | null;

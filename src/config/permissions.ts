@@ -28,6 +28,8 @@ export const PERMISSIONS = {
   },
 } as const;
 
+
+
 export type Permission =
   | typeof PERMISSIONS.DASHBOARD.READ
 

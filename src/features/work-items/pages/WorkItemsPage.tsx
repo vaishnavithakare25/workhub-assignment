@@ -83,9 +83,9 @@ const canFilterByAssignee =
   } = useAssignees();
 
   const workItems = useMemo(
-    ()=> data?.workItems ?? [],
-    [data?.workItems]
-  )
+  () => data?.workItems ?? [],
+  [data?.workItems]
+);
 
  const filteredWorkItems = useMemo(() => {
   const normalizedSearch =

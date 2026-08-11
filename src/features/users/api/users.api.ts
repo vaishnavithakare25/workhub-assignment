@@ -23,7 +23,7 @@ export const usersApi = {
     );
   },
 
-  getAllUsers() {
+getAllUsers() {
   return apiClient.get<UsersListResponseDto>(
     ENDPOINTS.USERS.LIST,
     {
@@ -34,7 +34,6 @@ export const usersApi = {
     }
   );
 },
-
 
   searchUsers(params: UserListParams) {
     const skip = (params.page - 1) * params.pageSize;
@@ -101,3 +100,4 @@ export const usersApi = {
     );
   },
 };
+

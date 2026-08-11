@@ -31,6 +31,8 @@ export function useCreateWorkItem() {
       const localWorkItem: WorkItem = {
         ...createdWorkItem,
 
+        // Preserve submitted values because
+        // DummyJSON mutations are simulated.
         title: payload.todo,
         completed: payload.completed,
         userId: payload.userId,

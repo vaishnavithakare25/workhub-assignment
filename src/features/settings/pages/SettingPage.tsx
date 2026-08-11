@@ -97,7 +97,9 @@ export default function SettingsPage() {
           Manage your application preferences.
         </p>
 
-         
+          <div className="rounded-lg bg-white p-4 text-black dark:bg-gray-900 dark:text-white">
+            Theme is working
+         </div>
       </div>
 
       <div className="max-w-2xl space-y-6">

@@ -1,5 +1,4 @@
-import { apiClient } from "@/api";
-import { ENDPOINTS } from "@/api";
+import { apiClient, ENDPOINTS } from "@/api";
 
 import type { LoginRequestDto } from "../dto/login-request.dto";
 import type { LoginResponseDto } from "../dto/login-response.dto";
@@ -13,11 +12,14 @@ export const authApi = {
     );
   },
 
-  getUser(id: number) {
+  
+
+   getUser(id: number) {
     return apiClient.get<UserResponseDto>(
       ENDPOINTS.USERS.DETAIL(id)
     );
   },
+
   getCurrentUser() {
     return apiClient.get<UserResponseDto>(
       ENDPOINTS.AUTH.ME

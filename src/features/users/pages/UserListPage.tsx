@@ -19,17 +19,11 @@ import type { UserListParams } from "../types/user-list-params";
 import { parseUserListParams } from "../utils/parse-user-list-params";
 import { ROUTES } from "@/shared/constants/routes";
 
-import { usePreferencesStore } from "@/stores/preferences.store";
-
 export default function UserListPage() {
   const [searchParams, setSearchParams] =
     useSearchParams();
 
-const defaultPageSize = usePreferencesStore(
-  (state) => state.defaultPageSize
-);
-
-  const params = parseUserListParams(searchParams, defaultPageSize);
+  const params = parseUserListParams(searchParams);
 
   const currentUser = useAuthStore(
     (state) => state.user

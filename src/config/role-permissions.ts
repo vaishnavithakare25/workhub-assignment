@@ -1,5 +1,5 @@
-import { PERMISSIONS, type Permission  } from "./permissions";
-import { ROLES, type Role  } from "./roles";
+import { PERMISSIONS, type Permission } from "./permissions";
+import { ROLES, type Role } from "./roles";
 
 export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
   [ROLES.ADMIN]: [
@@ -35,6 +35,7 @@ export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
     PERMISSIONS.PROFILE.READ,
     PERMISSIONS.PROFILE.UPDATE,
 
+     // Settings
     PERMISSIONS.SETTINGS.READ,
     PERMISSIONS.SETTINGS.UPDATE,
   ],
@@ -50,7 +51,8 @@ export const ROLE_PERMISSIONS: Record<Role, Permission[]> = {
 
     PERMISSIONS.WORK_ITEMS.CREATE,
 
+     // Settings
     PERMISSIONS.SETTINGS.READ,
     PERMISSIONS.SETTINGS.UPDATE,
   ],
-} as const;
+};

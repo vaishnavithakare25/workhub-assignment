@@ -1,4 +1,5 @@
 
+
 export interface LoginResponseDto {
   id: number;
   username: string;
@@ -9,7 +10,7 @@ export interface LoginResponseDto {
 
   image: string;
 
-  
+ 
 
   accessToken: string;
   refreshToken: string;

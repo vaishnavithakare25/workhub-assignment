@@ -16,10 +16,6 @@ export function ThemeProvider({
     (state) => state.theme
   );
 
-
-
-
-
   useEffect(() => {
     const root = document.documentElement;
 
