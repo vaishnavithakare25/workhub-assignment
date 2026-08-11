@@ -58,4 +58,11 @@ export const router = createBrowserRouter([
     path: route.path,
     element: <route.component />,
   })),
+  {
+    path:"*",
+    element:(
+      <Navigate to={ROUTES.NOT_FOUND}
+      replace/>
+    )
+  }
 ]);

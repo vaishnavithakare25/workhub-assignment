@@ -29,63 +29,100 @@ export const publicRoutes: AppRoute[] = [
 
 export const protectedRoutes: AppRoute[] = [
   {
-    path: ROUTES.DASHBOARD,
+    path: "dashboard",
     component: DashboardPage,
+    permissions: [
+      PERMISSIONS.DASHBOARD.READ,
+    ],
+    navigation: {
+      label: "Dashboard",
+    },
   },
 
   {
-    path: ROUTES.USERS,
+    path: "users",
     component: UserListPage,
-    permissions: [PERMISSIONS.USERS.READ]
+    permissions: [
+      PERMISSIONS.USERS.READ,
+    ],
+    navigation: {
+      label: "Users",
+    },
   },
 
   {
-    path: ROUTES.USER_DETAIL,
+    path: "users/:userId",
     component: UserDetailPage,
-   permissions: [PERMISSIONS.USERS.READ]
+    permissions: [
+      PERMISSIONS.USERS.READ,
+    ],
   },
 
   {
-    path: ROUTES.CREATE_USER,
+    path: "users/new",
     component: CreateUserPage,
-    permissions: [PERMISSIONS.USERS.CREATE],
+    permissions: [
+      PERMISSIONS.USERS.CREATE,
+    ],
   },
 
   {
-    path: ROUTES.EDIT_USER,
+    path: "users/:userId/edit",
     component: EditUserPage,
-    permissions: [PERMISSIONS.USERS.UPDATE],
+    permissions: [
+      PERMISSIONS.USERS.UPDATE,
+    ],
   },
 
   {
-    path: ROUTES.WORK_ITEMS,
+    path: "work-items",
     component: WorkItemsPage,
-    permissions: [PERMISSIONS.WORK_ITEMS.READ],
+    permissions: [
+      PERMISSIONS.WORK_ITEMS.READ,
+    ],
+    navigation: {
+      label: "Work Items",
+    },
   },
 
-   {
-  path: ROUTES.CREATE_WORK_ITEM,
-  component: CreateWorkItemPage,
-  permissions: [PERMISSIONS.WORK_ITEMS.CREATE],
-},
-
-{
-  path: ROUTES.EDIT_WORK_ITEM,
-  component: EditWorkItemPage,
-  permissions: [PERMISSIONS.WORK_ITEMS.UPDATE],
-},
-
+  {
+    path: "work-items/new",
+    component: CreateWorkItemPage,
+    permissions: [
+      PERMISSIONS.WORK_ITEMS.CREATE,
+    ],
+  },
 
   {
-    path: ROUTES.PROFILE,
+    path: "work-items/:id/edit",
+    component: EditWorkItemPage,
+    permissions: [
+      PERMISSIONS.WORK_ITEMS.UPDATE,
+    ],
+  },
+
+  {
+    path: "profile",
     component: ProfilePage,
-    permissions: [PERMISSIONS.PROFILE.READ, PERMISSIONS.PROFILE.UPDATE],
+    permissions: [
+      PERMISSIONS.PROFILE.READ,
+      PERMISSIONS.PROFILE.UPDATE,
+    ],
+    navigation: {
+      label: "Profile",
+    },
   },
 
   {
-    path: ROUTES.SETTINGS,
+    path: "settings",
     component: SettingsPage,
-    permissions: [PERMISSIONS.SETTINGS.READ, PERMISSIONS.SETTINGS.UPDATE],
+    permissions: [
+      PERMISSIONS.SETTINGS.READ,
+      PERMISSIONS.SETTINGS.UPDATE,
+    ],
+    navigation: {
+      label: "Settings",
+    },
   },
 ];
 

@@ -1,4 +1,3 @@
-import type { UserRole } from "../types/auth.types";
 
 export interface LoginResponseDto {
   id: number;
