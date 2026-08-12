@@ -621,15 +621,15 @@ features/work-items/schemas/work-item.schema.ts
 -   Valid email required
 -   Phone required
 -   Age must be an integer
--   Age must be at least 1
--   Age must be at most 120
+-   Age must be at least 18
+-   Age must be at most 75
 -   Role must be a supported role
 -   Department required
 
 ### Work Item
 
--   Title minimum 5 characters
--   Title maximum 200 characters
+-   Description minimum 5 characters
+-   Description maximum 200 characters
 -   Assignee required
 -   Assignee must be a positive integer
 -   Completion state must be boolean
@@ -717,7 +717,7 @@ GET    /users/:id
 GET    /users/search
 GET    /users/filter
 POST   /users/add
-PUT    /users/:id
+Patch    /users/:id
 DELETE /users/:id
 ```
 

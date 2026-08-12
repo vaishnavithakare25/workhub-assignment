@@ -1,5 +1,6 @@
 export const ROUTES = {
  
+  APP: "/",
 
   LOGIN: "/login",
 
@@ -10,7 +11,7 @@ export const ROUTES = {
 
   USER_DETAIL: "/users/:userId",
 
-  CREATE_USER: "/users/create",
+  CREATE_USER: "/users/new",
 
   EDIT_USER: "/users/:userId/edit",
 
