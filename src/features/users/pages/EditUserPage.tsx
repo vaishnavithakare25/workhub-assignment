@@ -9,7 +9,7 @@ import {
 
 import { ROUTES } from "@/shared/constants/routes";
 
-import { UserForm } from "../components/UserForm";
+import { UserForm } from "../components/UserForm"
 import { useUser } from "../hooks/useUser";
 import { useUpdateUser } from "../hooks/useUpdateUser";
 
