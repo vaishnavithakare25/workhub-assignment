@@ -314,17 +314,17 @@ The UI uses the same permission model for:
 
   Route                        Purpose
   ---------------------------- --------------------------------
-  `/`                       Protected application boundary
-  `/dashboard`             Dashboard
-  `/users`                 User directory
-  `/users/:userId`         User details
-  `/users/new`             Create user
-  `/users/:userId/edit`    Edit user
-  `/work-items`            Work items
-  `/work-items/new`        Create work item
-  `/work-items/:id/edit`   Edit work item
-  `/profile`               Current-user profile
-  `/settings`              UI preferences
+  `/app`                       Protected application boundary
+  `/app/dashboard`             Dashboard
+  `/app/users`                 User directory
+  `/app/users/:userId`         User details
+  `/app/users/new`             Create user
+  `/app/users/:userId/edit`    Edit user
+  `/app/work-items`            Work items
+  `/app/work-items/new`        Create work item
+  `/app/work-items/:id/edit`   Edit work item
+  `/app/profile`               Current-user profile
+  `/app/settings`              UI preferences
 
 ### Error routes
 
