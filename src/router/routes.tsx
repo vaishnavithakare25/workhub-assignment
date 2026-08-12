@@ -14,6 +14,11 @@ import {
 } from "./route.config";
 
 export const router = createBrowserRouter([
+
+  {
+    path:"/",
+    element:<Navigate to={ROUTES.LOGIN} replace />,
+  },
   // Public routes
   {
     element: <AuthLayout />,
