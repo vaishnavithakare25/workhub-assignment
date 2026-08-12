@@ -79,13 +79,7 @@ export default function SettingsPage() {
   return (
     <div className="space-y-6">
 
-      <div className="rounded-lg border border-gray-200 bg-white p-6 text-gray-900 dark:border-gray-700 dark:bg-gray-900 dark:text-gray-100">
-  
-
-  <p className="mt-1">
-    If Dark is selected, this box should become dark.
-  </p>
-</div>
+      
       <div>
         <h1 className="text-2xl font-semibold">
           Settings
